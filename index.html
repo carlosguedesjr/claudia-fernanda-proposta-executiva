@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Longevidade & Força 40+ (v3.0 Executiva) | Cláudia Fernanda Personal Trainer</title>
+  <meta name="description" content="Proposta Estratégica Executiva v3.0 para Cláudia Fernanda: Reposicionamento High-Ticket, Mecanismo Único CF-40, Escala de Valor e Funil Reverso para R$ 25k/mês.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-base: #06090e;
+      --bg-surface: #0b1119;
+      --bg-surface-elevated: #111a26;
+      --bg-surface-card: #152232;
+      --bg-surface-hover: #1c2e44;
+      
+      --cyan-brand: #38d1f3;
+      --cyan-brand-dark: #0284c7;
+      --cyan-brand-light: #7ee2f8;
+      --cyan-glow: rgba(56, 209, 243, 0.25);
+      --cyan-subtle: rgba(56, 209, 243, 0.08);
+      --cyan-border: rgba(56, 209, 243, 0.28);
+      
+      --text-white: #ffffff;
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      
+      --border-subtle: #192535;
+      --border-strong: #23344a;
+      
+      --accent-emerald: #10b981;
+      --accent-emerald-subtle: rgba(16, 185, 129, 0.12);
+      --accent-emerald-border: rgba(16, 185, 129, 0.3);
+      --accent-rose: #f43f5e;
+      --accent-rose-subtle: rgba(244, 63, 94, 0.12);
+      --accent-amber: #f59e0b;
+      --accent-amber-subtle: rgba(245, 158, 11, 0.12);
+      --accent-gold: #fbbf24;
+      
+      --font-main: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+      --shadow-card: 0 12px 32px -4px rgba(0, 0, 0, 0.55);
+      --shadow-glow: 0 0 40px -4px rgba(56, 209, 243, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-primary);
+      font-family: var(--font-main);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg-base);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--border-strong);
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--cyan-brand-dark);
+    }
+
+    /* Container */
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Sticky Navigation */
+    .nav-bar {
+      position: sticky;
+      top: 0;
+      background: rgba(6, 9, 14, 0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+      z-index: 1000;
+      padding: 12px 0;
+      transition: all 0.3s ease;
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .nav-logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+    }
+
+    .nav-logo-img {
+      height: 38px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .nav-badge-pill {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      background: var(--cyan-subtle);
+      color: var(--cyan-brand);
+      border: 1px solid var(--cyan-border);
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .nav-badge-pill::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--cyan-brand);
+      box-shadow: 0 0 8px var(--cyan-brand);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 13.5px;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--cyan-brand);
+    }
+
+    .nav-cta-btn {
+      background: linear-gradient(135deg, var(--cyan-brand), var(--cyan-brand-dark));
+      color: #03111b;
+      font-weight: 700;
+      font-size: 13px;
+      padding: 8px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 14px rgba(56, 209, 243, 0.3);
+    }
+
+    .nav-cta-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(56, 209, 243, 0.45);
+    }
+
+    @media (max-width: 900px) {
+      .nav-links {
+        display: none;
+      }
+    }
+
+    /* HERO SECTION */
+    .hero-card {
+      background: linear-gradient(180deg, var(--bg-surface-elevated) 0%, var(--bg-surface) 100%);
+      border: 1px solid var(--border-strong);
+      border-radius: 28px;
+      padding: 48px;
+      margin: 36px 0;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #38d1f3, #0284c7, #10b981, #38d1f3);
+    }
+
+    .hero-card::after {
+      content: '';
+      position: absolute;
+      top: -20%;
+      right: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(56, 209, 243, 0.16) 0%, rgba(6, 9, 14, 0) 70%);
+      pointer-events: none;
+    }
+
+    .hero-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .hero-logo-box {
+      background: rgba(0, 0, 0, 0.45);
+      padding: 10px 20px;
+      border-radius: 14px;
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-logo-box img {
+      height: 48px;
+      width: auto;
+    }
+
+    .hero-tag {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--cyan-brand);
+      background: var(--cyan-subtle);
+      border: 1px solid var(--cyan-border);
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+
+    .hero-title {
+      font-size: 46px;
+      line-height: 1.15;
+      font-weight: 800;
+      color: var(--text-white);
+      letter-spacing: -0.025em;
+      margin-bottom: 16px;
+      max-width: 950px;
+    }
+
+    .hero-title span.cyan {
+      color: var(--cyan-brand);
+      text-shadow: 0 0 25px rgba(56, 209, 243, 0.35);
+    }
+
+    .hero-slogan-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .hero-slogan {
+      font-size: 19px;
+      font-weight: 500;
+      color: #cbd5e1;
+      letter-spacing: 0.02em;
+    }
+
+    .hero-slogan em {
+      font-style: italic;
+      color: var(--cyan-brand);
+      font-weight: 700;
+    }
+
+    .hero-line {
+      width: 44px;
+      height: 2px;
+      background: var(--cyan-brand);
+    }
+
+    .hero-subtitle {
+      font-size: 17px;
+      color: var(--text-secondary);
+      max-width: 880px;
+      line-height: 1.65;
+      margin-bottom: 36px;
+    }
+
+    .hero-subtitle strong {
+      color: var(--text-white);
+    }
+
+    /* KPI Highlights */
+    .hero-kpis {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin-top: 36px;
+    }
+
+    .kpi-item {
+      background: var(--bg-surface-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 18px;
+      padding: 22px;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .kpi-item:hover {
+      transform: translateY(-2px);
+      border-color: var(--cyan-border);
+    }
+
+    .kpi-item h4 {
+      font-size: 12px;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .kpi-num {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--text-white);
+      letter-spacing: -0.02em;
+      margin-bottom: 4px;
+    }
+
+    .kpi-num.cyan {
+      color: var(--cyan-brand);
+    }
+
+    .kpi-num.emerald {
+      color: var(--accent-emerald);
+    }
+
+    .kpi-item p {
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    /* SECTION LAYOUT */
+    .section-wrap {
+      margin: 64px 0;
+    }
+
+    .section-header {
+      margin-bottom: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .section-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--cyan-brand);
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .section-title {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--text-white);
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+
+    .section-subtitle {
+      font-size: 15.5px;
+      color: var(--text-secondary);
+      max-width: 820px;
+      line-height: 1.6;
+      margin-top: 8px;
+    }
+
+    /* COMPARISON TABLE: PERSONAL TRADICIONAL VS ASSESSORIA HIGH-TICKET */
+    .comp-table-wrap {
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-strong);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      margin-top: 24px;
+    }
+
+    .comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    .comp-table th, .comp-table td {
+      padding: 18px 24px;
+      font-size: 14.5px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .comp-table th {
+      background: var(--bg-surface-card);
+      font-family: var(--font-mono);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-secondary);
+    }
+
+    .comp-table th.highlight {
+      background: var(--cyan-subtle);
+      color: var(--cyan-brand);
+      border-left: 1px solid var(--cyan-border);
+      border-right: 1px solid var(--cyan-border);
+    }
+
+    .comp-table td.highlight {
+      background: rgba(56, 209, 243, 0.03);
+      border-left: 1px solid var(--cyan-border);
+      border-right: 1px solid var(--cyan-border);
+      font-weight: 600;
+      color: var(--text-white);
+    }
+
+    .comp-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .badge-bad {
+      display: inline-block;
+      background: var(--accent-rose-subtle);
+      color: var(--accent-rose);
+      padding: 3px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .badge-good {
+      display: inline-block;
+      background: var(--accent-emerald-subtle);
+      color: var(--accent-emerald);
+      padding: 3px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    /* MECANISMO ÚNICO BOX (ANALOGIA INSTANTÂNEA) */
+    .mecanismo-box {
+      background: linear-gradient(135deg, rgba(56, 209, 243, 0.12), rgba(17, 26, 38, 0.85));
+      border: 1px solid var(--cyan-border);
+      border-radius: 24px;
+      padding: 36px;
+      margin: 32px 0;
+      box-shadow: var(--shadow-glow);
+      position: relative;
+    }
+
+    .mecanismo-header {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--cyan-brand);
+      margin-bottom: 12px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .mecanismo-phrase {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--text-white);
+      line-height: 1.35;
+      letter-spacing: -0.015em;
+      margin-bottom: 16px;
+    }
+
+    .mecanismo-phrase span.cyan {
+      color: var(--cyan-brand);
+      text-decoration: underline;
+      text-decoration-color: rgba(56, 209, 243, 0.4);
+    }
+
+    .mecanismo-desc {
+      font-size: 16px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+
+    /* 3 PILARES DO PROTOCOLO CF-40 */
+    .pilares-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 22px;
+      margin-top: 28px;
+    }
+
+    .pilar-card {
+      background: var(--bg-surface-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 20px;
+      padding: 28px;
+      position: relative;
+      transition: all 0.2s ease;
+    }
+
+    .pilar-card:hover {
+      border-color: var(--cyan-border);
+      transform: translateY(-3px);
+    }
+
+    .pilar-num {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--cyan-brand);
+      background: var(--cyan-subtle);
+      padding: 4px 10px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 14px;
+    }
+
+    .pilar-card h3 {
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--text-white);
+      margin-bottom: 10px;
+    }
+
+    .pilar-card p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* ESCALA DE VALOR (VALUE LADDER) */
+    .ladder-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    @media (max-width: 992px) {
+      .ladder-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .ladder-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .ladder-step {
+      background: var(--bg-surface-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 20px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .ladder-step.featured {
+      border-color: var(--cyan-border);
+      background: linear-gradient(180deg, rgba(56, 209, 243, 0.08) 0%, var(--bg-surface-card) 100%);
+      box-shadow: 0 8px 24px rgba(56, 209, 243, 0.15);
+    }
+
+    .ladder-badge {
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--cyan-brand);
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    .ladder-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--text-white);
+      margin-bottom: 6px;
+    }
+
+    .ladder-price {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--accent-emerald);
+      margin-bottom: 14px;
+      font-family: var(--font-mono);
+    }
+
+    .ladder-desc {
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      line-height: 1.55;
+      margin-bottom: 16px;
+    }
+
+    .ladder-target {
+      margin-top: auto;
+      font-size: 12px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 12px;
+    }
+
+    /* SUPER OFERTA / STACK OFFER */
+    .stack-panel {
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-strong);
+      border-radius: 24px;
+      padding: 36px;
+      box-shadow: var(--shadow-card);
+      margin-top: 28px;
+    }
+
+    .stack-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 36px;
+      align-items: center;
+    }
+
+    @media (max-width: 900px) {
+      .stack-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .stack-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .stack-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 16px;
+      background: var(--bg-surface-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      font-size: 14.5px;
+    }
+
+    .stack-list li .item-name {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text-primary);
+    }
+
+    .stack-list li .item-name span.icon {
+      color: var(--cyan-brand);
+      font-weight: 700;
+    }
+
+    .stack-list li .item-price {
+      font-family: var(--font-mono);
+      font-size: 13.5px;
+      color: var(--text-muted);
+      text-decoration: line-through;
+    }
+
+    .stack-summary-box {
+      background: linear-gradient(135deg, rgba(56, 209, 243, 0.12), rgba(11, 17, 25, 0.95));
+      border: 1px solid var(--cyan-border);
+      border-radius: 22px;
+      padding: 32px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      box-shadow: var(--shadow-glow);
+    }
+
+    .stack-old-total {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .stack-old-num {
+      font-size: 18px;
+      text-decoration: line-through;
+      color: var(--text-secondary);
+      font-family: var(--font-mono);
+    }
+
+    .stack-final-label {
+      font-size: 13px;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--cyan-brand);
+      font-weight: 700;
+    }
+
+    .stack-final-price {
+      font-size: 44px;
+      font-weight: 800;
+      color: var(--text-white);
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+
+    .stack-installments {
+      font-size: 16px;
+      color: var(--accent-emerald);
+      font-weight: 700;
+    }
+
+    .stack-anchor-note {
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* GARANTIA BLINDADA 21 DIAS */
+    .garantia-card {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(11, 17, 25, 0.9));
+      border: 1px solid var(--accent-emerald-border);
+      border-radius: 24px;
+      padding: 36px;
+      margin: 36px 0;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 28px;
+      align-items: center;
+      box-shadow: 0 10px 32px -4px rgba(16, 185, 129, 0.2);
+    }
+
+    @media (max-width: 768px) {
+      .garantia-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+
+    .garantia-badge-seal {
+      width: 90px;
+      height: 90px;
+      background: var(--accent-emerald-subtle);
+      border: 2px solid var(--accent-emerald);
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-emerald);
+      font-weight: 800;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      text-align: center;
+      line-height: 1.1;
+      margin: 0 auto;
+    }
+
+    .garantia-badge-seal span.days {
+      font-size: 26px;
+      line-height: 1;
+    }
+
+    .garantia-content h3 {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--text-white);
+      margin-bottom: 8px;
+    }
+
+    .garantia-content p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* CALCULADORA INTERATIVA DE UNIT ECONOMICS & FUNIL REVERSO */
+    .calc-card {
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-strong);
+      border-radius: 24px;
+      padding: 36px;
+      box-shadow: var(--shadow-card);
+      margin-top: 28px;
+    }
+
+    .calc-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 36px;
+      align-items: center;
+    }
+
+    @media (max-width: 900px) {
+      .calc-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .calc-inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .calc-control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .calc-label-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .calc-val-display {
+      font-family: var(--font-mono);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--cyan-brand);
+    }
+
+    input[type=range] {
+      width: 100%;
+      height: 6px;
+      background: var(--bg-surface-card);
+      border-radius: 4px;
+      outline: none;
+      -webkit-appearance: none;
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--cyan-brand);
+      cursor: pointer;
+      box-shadow: 0 0 10px var(--cyan-brand);
+    }
+
+    .calc-results-panel {
+      background: var(--bg-surface-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 20px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .calc-kpi-block {
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 14px;
+    }
+
+    .calc-kpi-block:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .calc-kpi-label {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .calc-kpi-val {
+      font-size: 30px;
+      font-weight: 800;
+      color: var(--text-white);
+      letter-spacing: -0.02em;
+    }
+
+    .calc-kpi-val.cyan {
+      color: var(--cyan-brand);
+    }
+
+    .calc-kpi-val.emerald {
+      color: var(--accent-emerald);
+    }
+
+    .calc-kpi-sub {
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      margin-top: 2px;
+    }
+
+    /* ANDROMEDA 5 TESES CRIATIVAS */
+    .andromeda-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .andromeda-card {
+      background: var(--bg-surface-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 18px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: all 0.2s ease;
+    }
+
+    .andromeda-card:hover {
+      border-color: var(--cyan-border);
+      transform: translateY(-2px);
+    }
+
+    .andromeda-badge {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--cyan-brand);
+      background: var(--cyan-subtle);
+      padding: 3px 10px;
+      border-radius: 6px;
+      width: fit-content;
+    }
+
+    .andromeda-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text-white);
+    }
+
+    .andromeda-hook {
+      font-size: 13.5px;
+      color: #cbd5e1;
+      font-style: italic;
+      background: rgba(0, 0, 0, 0.25);
+      padding: 10px 14px;
+      border-left: 3px solid var(--cyan-brand);
+      border-radius: 6px;
+      line-height: 1.5;
+    }
+
+    .andromeda-target {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: auto;
+    }
+
+    /* MOCKUP APPAREL SHOWCASE */
+    .mockup-panel {
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-strong);
+      border-radius: 24px;
+      padding: 36px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      align-items: center;
+      box-shadow: var(--shadow-card);
+      margin-top: 36px;
+    }
+
+    @media (max-width: 900px) {
+      .mockup-panel {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .mockup-img-wrap {
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid var(--border-strong);
+      box-shadow: var(--shadow-card);
+      background: #000;
+    }
+
+    .mockup-img-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .mockup-img-wrap img:hover {
+      transform: scale(1.02);
+    }
+
+    .mockup-content {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .mockup-content h3 {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--text-white);
+      line-height: 1.3;
+    }
+
+    .mockup-content p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+
+    /* PLANO DE IMPLEMENTAÇÃO 90 DIAS */
+    .timeline-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 28px;
+    }
+
+    @media (max-width: 900px) {
+      .timeline-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .timeline-card {
+      background: var(--bg-surface-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 20px;
+      padding: 26px;
+      position: relative;
+    }
+
+    .timeline-month {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--cyan-brand);
+      margin-bottom: 8px;
+    }
+
+    .timeline-card h4 {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--text-white);
+      margin-bottom: 12px;
+    }
+
+    .timeline-card ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 13.5px;
+      color: var(--text-secondary);
+    }
+
+    .timeline-card ul li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .timeline-card ul li span {
+      color: var(--cyan-brand);
+      font-weight: 700;
+    }
+
+    /* CTA FINAL */
+    .final-cta-card {
+      background: linear-gradient(180deg, var(--bg-surface-elevated) 0%, var(--bg-surface-card) 100%);
+      border: 1px solid var(--cyan-border);
+      border-radius: 28px;
+      padding: 48px;
+      text-align: center;
+      margin: 64px 0;
+      box-shadow: var(--shadow-glow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .final-cta-card h2 {
+      font-size: 36px;
+      font-weight: 800;
+      color: var(--text-white);
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .final-cta-card p {
+      font-size: 17px;
+      color: var(--text-secondary);
+      max-width: 720px;
+      margin: 0 auto 32px auto;
+      line-height: 1.6;
+    }
+
+    .cta-btn-large {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: linear-gradient(135deg, var(--cyan-brand), var(--cyan-brand-dark));
+      color: #03111b;
+      font-size: 17px;
+      font-weight: 800;
+      padding: 16px 36px;
+      border-radius: 12px;
+      text-decoration: none;
+      box-shadow: 0 8px 24px rgba(56, 209, 243, 0.4);
+      transition: all 0.25s ease;
+    }
+
+    .cta-btn-large:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(56, 209, 243, 0.6);
+    }
+
+    /* FOOTER */
+    .footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 40px 0;
+      text-align: center;
+      font-size: 13.5px;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .footer-logo img {
+      height: 42px;
+      width: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- STICKY NAVBAR -->
+  <nav class="nav-bar">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo-wrap">
+        <img src="logo-dark.png" alt="Claudia Fernanda Personal Trainer" class="nav-logo-img">
+        <span class="nav-badge-pill">Proposta Executiva v3.0</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#diagnostico">Diagnóstico</a>
+        <a href="#mecanismo">Mecanismo Único</a>
+        <a href="#escala">Escala de Valor</a>
+        <a href="#stack">Super Oferta</a>
+        <a href="#simulador">Simulador Financeiro</a>
+        <a href="#andromeda">Andromeda</a>
+        <a href="#garantia">Garantia</a>
+      </div>
+
+      <a href="https://wa.me/5519998990373?text=Ol%C3%A1%20Carlos!%20Li%20a%20proposta%20executiva%20v3.0%20da%20Cl%C3%A1udia%20Fernanda%20e%20quero%20iniciar%20a%20implementa%C3%A7%C3%A3o." target="_blank" class="nav-cta-btn">
+        Aprovar Plano &rarr;
+      </a>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- HERO HEADER -->
+    <header class="hero-card">
+      <div class="hero-top-row">
+        <div class="hero-logo-box">
+          <img src="logo-dark.png" alt="Claudia Fernanda Personal Trainer">
+        </div>
+        <span class="hero-tag">Metodologia Fernando Miranda &bull; Staage &bull; Multi Digital</span>
+      </div>
+
+      <h1 class="hero-title">
+        Projeto Longevidade & Força 40+<br>
+        <span class="cyan">A Ponte Entre a Fisioterapia e a Musculação</span>
+      </h1>
+
+      <div class="hero-slogan-wrap">
+        <div class="hero-line"></div>
+        <p class="hero-slogan">Seu movimento. <em>Sua evolução.</em></p>
+      </div>
+
+      <p class="hero-subtitle">
+        Apresentação executiva e comercial de reposicionamento de alta margem para consolidar a <strong>Cláudia Fernanda</strong> como a referência máxima em <strong>saúde articular, vigor metabólico e força feminina 40+</strong> nos condomínios fechados de Valinhos (Swiss Park, Sans Souci, Vale do Itamaracá, Paiquerê).
+      </p>
+
+      <!-- KPI METRIC CARDS -->
+      <div class="hero-kpis">
+        <div class="kpi-item">
+          <h4>Público Estratégico</h4>
+          <div class="kpi-num cyan">Mulheres 40+</div>
+          <p>Transição hormonal, climatério, sarcopenia e medo de lesão</p>
+        </div>
+
+        <div class="kpi-item">
+          <h4>Faturamento Alvo</h4>
+          <div class="kpi-num emerald">R$ 24k - R$ 28k</div>
+          <p>Receita mensal recorrente e previsível com 12 a 15 alunas ativas</p>
+        </div>
+
+        <div class="kpi-item">
+          <h4>Ticket Semestral</h4>
+          <div class="kpi-num">R$ 9.600</div>
+          <p>Pacote VIP com contrato semestral (equivalente a R$ 1.600/mês)</p>
+        </div>
+
+        <div class="kpi-item">
+          <h4>Reversão de Risco</h4>
+          <div class="kpi-num emerald">21 Dias</div>
+          <p>Garantia incondicional de devolução de 100% sem atrito</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECTION 1: O DIAGNÓSTICO IMPLACÁVEL -->
+    <section id="diagnostico" class="section-wrap">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">Diagnóstico antes da prescrição</div>
+          <h2 class="section-title">O Fim da Comoditização da Hora/Aula</h2>
+        </div>
+        <span class="nav-badge-pill">Análise de Gargalo</span>
+      </div>
+
+      <p class="section-subtitle">
+        A maioria dos personais trainers fica presa na armadilha da hora/aula: trabalha 10 horas por dia, vive exausta física e mentalmente, e quando um aluno viaja ou cancela, a renda desaba. Esta proposta executa a transição de <strong>prestadora de serviço braçal</strong> para <strong>dona de uma assessoria de saúde premium</strong>.
+      </p>
+
+      <div class="comp-table-wrap">
+        <table class="comp-table">
+          <thead>
+            <tr>
+              <th>Dimensão Operacional</th>
+              <th>Modelo Personal Tradicional (Comoditizado)</th>
+              <th class="highlight">Assessoria Longevidade & Força 40+ (v3.0)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Posicionamento</strong></td>
+              <td>"Dou aula de musculação e funcional"</td>
+              <td class="highlight">A Ponte entre a Fisioterapia e a Musculação (Protocolo CF-40)</td>
+            </tr>
+            <tr>
+              <td><strong>Modelo de Cobrança</strong></td>
+              <td>Mensalidade avulsa ou hora/aula (R$ 80 a R$ 120/h)</td>
+              <td class="highlight">Contratos Semestrais de R$ 9.600 (Receita travada e previsível)</td>
+            </tr>
+            <tr>
+              <td><strong>Público-Alvo</strong></td>
+              <td>Qualquer pessoa que queira treinar</td>
+              <td class="highlight">Mulheres 40+ de condomínios nobres com dor articular e climatério</td>
+            </tr>
+            <tr>
+              <td><strong>Segurança Financeira</strong></td>
+              <td><span class="badge-bad">Risco Alto</span> Aluno viaja no inverno e não paga</td>
+              <td class="highlight"><span class="badge-good">Previsibilidade Total</span> Contrato com recorrência e cartão programado</td>
+            </tr>
+            <tr>
+              <td><strong>Carga de Trabalho</strong></td>
+              <td>8 a 10 horas/dia de aula em pé (Exaustão)</td>
+              <td class="highlight">4 a 5 horas/dia de alto foco (Qualidade de vida real)</td>
+            </tr>
+            <tr>
+              <td><strong>Faturamento Líquido</strong></td>
+              <td>R$ 6.000 a R$ 9.000/mês oscilante</td>
+              <td class="highlight">R$ 20.000 a R$ 28.000/mês estável com apenas 15 alunas</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 2: O MECANISMO ÚNICO COM ANALOGIA INSTANTÂNEA -->
+    <section id="mecanismo" class="section-wrap">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">Diferenciação Perceptiva &bull; Expert Secrets</div>
+          <h2 class="section-title">O Mecanismo Único: Protocolo Biomecânico CF-40™</h2>
+        </div>
+      </div>
+
+      <!-- ANALOGIA INSTANTÂNEA -->
+      <div class="mecanismo-box">
+        <div class="mecanismo-header">
+          <span>⚡</span> Analogia Instantânea de Posicionamento (Regra dos 3 Segundos)
+        </div>
+        <div class="mecanismo-phrase">
+          "A ponte entre a <span class="cyan">Fisioterapia</span> e a <span class="cyan">Musculação</span>: a precisão ortopédica sem dor com o resultado estético e de força muscular da alta performance."
+        </div>
+        <p class="mecanismo-desc">
+          Mulheres de 40 a 65 anos fogem da academia convencional porque têm pavor de travar a coluna, desgastar os meniscos ou romper tendões em exercícios genéricos. Ao mesmo tempo, o Pilates muitas vezes atinge um platô que não oferece sobrecarga mecânica suficiente para reverter osteopenia e sarcopenia. <strong>A Cláudia Fernanda é a resposta exata para esse vazio de mercado.</strong>
+        </p>
+      </div>
+
+      <!-- 3 PILARES -->
+      <div class="pilares-grid">
+        <div class="pilar-card">
+          <span class="pilar-num">Pilar 01</span>
+          <h3>Mapeamento 3D & Descompressão</h3>
+          <p>
+            Identificação milimétrica de encurtamentos da cadeia posterior, compensações pélvicas e desequilíbrios escapulares. O treino inicia sempre desarmando a tensão que causaria dor lombar ou cervical.
+          </p>
+        </div>
+
+        <div class="pilar-card">
+          <span class="pilar-num">Pilar 02</span>
+          <h3>Estabilização Profunda do Core</h3>
+          <p>
+            Fortalecimento do assoalho pélvico e dos músculos profundos do abdômen (transverso) essenciais para a saúde da mulher no climatério. Cria uma cinta biológica que protege a coluna em qualquer esforço.
+          </p>
+        </div>
+
+        <div class="pilar-card">
+          <span class="pilar-num">Pilar 03</span>
+          <h3>Sobrecarga Óssea Progressiva</h3>
+          <p>
+            Estímulo mecânico seguro para ganho de densidade mineral óssea e síntese proteica muscular, combatendo ativamente a sarcopenia da menopausa sem sobrecarregar as articulações.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: ESCALA DE VALOR (VALUE LADDER) -->
+    <section id="escala" class="section-wrap">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">Engenharia de Ofertas &bull; DotCom Secrets</div>
+          <h2 class="section-title">A Escala de Valor (Value Ladder)</h2>
+        </div>
+        <span class="nav-badge-pill">4 Degraus de Lucro</span>
+      </div>
+
+      <p class="section-subtitle">
+        Quem tem um único produto vive na montanha-russa de caixa. A escala de valor conduz a cliente desde o primeiro contato seguro até o contrato premium de alta fidelidade:
+      </p>
+
+      <div class="ladder-grid">
+        <!-- Degrau 1 -->
+        <div class="ladder-step">
+          <span class="ladder-badge">Degrau 01 &bull; Isca Gratuita</span>
+          <h4 class="ladder-title">Guia Anti-Travamento 40+</h4>
+          <div class="ladder-price">R$ 0,00</div>
+          <p class="ladder-desc">
+            PDF técnico e direto: "Os 5 Exercícios Proibidos para Mulheres 40+ com Dor Lombar". Atrai leads qualificados no Instagram sem atrito.
+          </p>
+          <div class="ladder-target">Objetivo: Captura de contato e autoridade imediata.</div>
+        </div>
+
+        <!-- Degrau 2 -->
+        <div class="ladder-step">
+          <span class="ladder-badge">Degrau 02 &bull; Tripwire / Front-end</span>
+          <h4 class="ladder-title">Sessão Diagnóstica 3D</h4>
+          <div class="ladder-price">R$ 197,00</div>
+          <p class="ladder-desc">
+            Sessão presencial individual de 90 minutos no condomínio ou estúdio: Mapeamento postural completo + alinhamento de mobilidade.
+          </p>
+          <div class="ladder-target">Objetivo: Transformar lead curioso em cliente pagante.</div>
+        </div>
+
+        <!-- Degrau 3 -->
+        <div class="ladder-step">
+          <span class="ladder-badge">Degrau 03 &bull; Core Offer</span>
+          <h4 class="ladder-title">Programa Vitalidade Trimestral</h4>
+          <div class="ladder-price">R$ 5.400,00</div>
+          <p class="ladder-desc">
+            Ciclo de 12 semanas (3x R$ 1.950). Treinos presenciais 2 a 3x/semana + Concierge de rotina. Reprograma o tônus muscular.
+          </p>
+          <div class="ladder-target">Objetivo: Geração de caixa forte e primeiros cases.</div>
+        </div>
+
+        <!-- Degrau 4 (VIP) -->
+        <div class="ladder-step featured">
+          <span class="ladder-badge" style="color: var(--cyan-brand-light);">Degrau 04 &bull; High-Ticket VIP</span>
+          <h4 class="ladder-title">Programa Longevidade Semestral</h4>
+          <div class="ladder-price" style="color: var(--cyan-brand);">R$ 9.600,00</div>
+          <p class="ladder-desc">
+            Ciclo de 24 semanas (6x R$ 1.750). Acompanhamento integral, conexão com médico/ginecologista da aluna e kit exclusivo.
+          </p>
+          <div class="ladder-target">Objetivo: LTV máximo, retenção e estabilidade anual.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: SUPER OFERTA / STACK OFFER -->
+    <section id="stack" class="section-wrap">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">Ancoragem Implacável de Valor</div>
+          <h2 class="section-title">A Super Oferta (The Stack Offer)</h2>
+        </div>
+        <span class="nav-badge-pill">Empilhamento de Valor</span>
+      </div>
+
+      <div class="stack-panel">
+        <div class="stack-grid">
+          <div>
+            <h3 style="font-size: 22px; font-weight: 800; color: var(--text-white); margin-bottom: 8px;">
+              Programa Longevidade & Força 40+ Semestral VIP
+            </h3>
+            <p style="font-size: 14.5px; color: var(--text-secondary); margin-bottom: 20px;">
+              O que a aluna dos condomínios nobres de Valinhos recebe ao ingressar no programa de 24 semanas:
+            </p>
+
+            <ul class="stack-list">
+              <li>
+                <div class="item-name"><span class="icon">✓</span> 72 Sessões Presenciais VIP (24 semanas &bull; 3x/semana)</div>
+                <div class="item-price">R$ 8.640</div>
+              </li>
+              <li>
+                <div class="item-name"><span class="icon">✓</span> Mapeamento Ortopédico e Diagnóstico Biomecânico 3D Inicial</div>
+                <div class="item-price">R$ 650</div>
+              </li>
+              <li>
+                <div class="item-name"><span class="icon">✓</span> Concierge Exclusivo WhatsApp 7 Dias (Ajustes de Viagens & Mobilidade)</div>
+                <div class="item-price">R$ 1.200</div>
+              </li>
+              <li>
+                <div class="item-name"><span class="icon">✓</span> Alinhamento Direto com o Médico/Ginecologista da Aluna</div>
+                <div class="item-price">R$ 1.500</div>
+              </li>
+              <li>
+                <div class="item-name"><span class="icon">✓</span> Kit Oficial Cláudia Fernanda (Camisa Polo Técnica + Garrafa Matte)</div>
+                <div class="item-price">R$ 450</div>
+              </li>
+              <li>
+                <div class="item-name"><span class="icon">✓</span> Guia Nutricional & Metabólico para Menopausa e Sarcopenia</div>
+                <div class="item-price">R$ 490</div>
+              </li>
+              <li>
+                <div class="item-name"><span class="icon">✓</span> 1 Voucher VIP Sessão Diagnóstica para Presentear Amiga/Vizinha</div>
+                <div class="item-price">R$ 650</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="stack-summary-box">
+            <div class="stack-old-total">
+              Valor Total Percebido dos Entregáveis:
+              <div class="stack-old-num">R$ 13.580,00</div>
+            </div>
+
+            <div class="stack-final-label">Investimento no Programa Semestral:</div>
+            <div class="stack-final-price">R$ 9.600<span style="font-size: 20px; font-weight: 500; color: var(--text-muted);">,00</span></div>
+            <div class="stack-installments">Ou em 6x de R$ 1.750,00 sem complicação</div>
+
+            <p class="stack-anchor-note">
+              Equivalente a apenas <strong>R$ 1.600 por mês</strong>. Menos do que a mensalidade de uma escola infantil de Valinhos para blindar a saúde e a autonomia para os próximos 30 anos.
+            </p>
+
+            <div style="background: var(--accent-emerald-subtle); padding: 10px 14px; border-radius: 10px; border: 1px solid var(--accent-emerald-border); font-size: 13px; color: var(--accent-emerald); font-weight: 700;">
+              Economia Imediata de R$ 3.980,00 no Pacote Completo
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: GARANTIA BLINDADA 21 DIAS -->
+    <section id="garantia" class="section-wrap">
+      <div class="garantia-card">
+        <div class="garantia-badge-seal">
+          <span class="days">21</span>
+          <span>DIAS</span>
+        </div>
+
+        <div class="garantia-content">
+          <div style="font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; color: var(--accent-emerald); font-weight: 700; margin-bottom: 4px;">
+            Postura Alfa &bull; Reversão Radical de Risco (Mentoria 4.8)
+          </div>
+          <h3>Garantia Blindada de 21 Dias / 100% do Dinheiro de Volta</h3>
+          <p>
+            "A aluna faz 3 semanas completas de acompanhamento (até 6 sessões). Se ao final de 21 dias ela não sentir a coluna mais solta, mais disposição diária e a certeza absoluta de que este é o método mais seguro que ela já experimentou, a Cláudia devolve <strong>100% do valor pago</strong>. Sem burocracia, sem letras miúdas e sem constrangimento."
+          </p>
+          <div style="margin-top: 12px; font-size: 13px; color: #a7f3d0; font-weight: 600;">
+            Todo o risco fica nas costas da metodologia. Para a aluna, o risco é zero absoluto.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: SIMULADOR FINANCEIRO INTERATIVO (FUNIL REVERSO) -->
+    <section id="simulador" class="section-wrap">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">Matemática da Escala &bull; Mentoria 4.7 com Carlos Guedes</div>
+          <h2 class="section-title">Simulador Financeiro: O Funil Reverso da Cláudia</h2>
+        </div>
+        <span class="nav-badge-pill">Calculadora Interativa</span>
+      </div>
+
+      <div class="calc-card">
+        <div class="calc-grid">
+          <div class="calc-inputs">
+            <h3 style="font-size: 20px; font-weight: 800; color: var(--text-white);">
+              Ajuste as Variáveis da Operação:
+            </h3>
+
+            <!-- Slider 1: Alunas Ativas -->
+            <div class="calc-control-group">
+              <div class="calc-label-row">
+                <span>Número de Alunas Ativas:</span>
+                <span id="displayAlunas" class="calc-val-display">15 alunas</span>
+              </div>
+              <input type="range" id="sliderAlunas" min="6" max="25" value="15" step="1">
+              <div style="display: flex; justify-content: space-between; font-size: 11px; color: var(--text-muted); font-family: var(--font-mono);">
+                <span>6 alunas (Mínimo)</span>
+                <span>15 alunas (Meta Ideal)</span>
+                <span>25 alunas (Teto Máximo)</span>
+              </div>
+            </div>
+
+            <!-- Slider 2: % no Plano Semestral vs Trimestral -->
+            <div class="calc-control-group">
+              <div class="calc-label-row">
+                <span>Mix de Planos Semestrais (R$ 1.600/mês):</span>
+                <span id="displayMix" class="calc-val-display">70% Semestral / 30% Trimestral</span>
+              </div>
+              <input type="range" id="sliderMix" min="0" max="100" value="70" step="10">
+              <div style="display: flex; justify-content: space-between; font-size: 11px; color: var(--text-muted); font-family: var(--font-mono);">
+                <span>100% Trimestral (R$ 1.800/mês)</span>
+                <span>100% Semestral (R$ 1.600/mês)</span>
+              </div>
+            </div>
+
+            <!-- Slider 3: Carga Horária Diária -->
+            <div class="calc-control-group">
+              <div class="calc-label-row">
+                <span>Horas de Atendimento por Dia:</span>
+                <span id="displayHoras" class="calc-val-display">4,5 horas/dia</span>
+              </div>
+              <div style="font-size: 13px; color: var(--text-secondary); line-height: 1.5;">
+                Com apenas 15 alunas (treinando 2 a 3x na semana), a Cláudia precisa atender apenas <strong>4 a 5 horas por dia</strong>, eliminando completamente a exaustão física.
+              </div>
+            </div>
+          </div>
+
+          <!-- Resultados Dinâmicos -->
+          <div class="calc-results-panel">
+            <div class="calc-kpi-block">
+              <div class="calc-kpi-label">Faturamento Mensal Estimado</div>
+              <div id="resFaturamentoMensal" class="calc-kpi-val cyan">R$ 24.900,00</div>
+              <div class="calc-kpi-sub">Receita bruta mensal estável e recorrente</div>
+            </div>
+
+            <div class="calc-kpi-block">
+              <div class="calc-kpi-label">Faturamento Anual Projetado</div>
+              <div id="resFaturamentoAnual" class="calc-kpi-val emerald">R$ 298.800,00</div>
+              <div class="calc-kpi-sub">Com retenção semestral de 80%</div>
+            </div>
+
+            <div class="calc-kpi-block">
+              <div class="calc-kpi-label">Novas Alunas Necessárias por Mês</div>
+              <div id="resNovasAlunas" class="calc-kpi-val" style="color: var(--accent-gold);">1 a 2 alunas</div>
+              <div class="calc-kpi-sub">Tráfego pago precisa gerar apenas 3 a 4 sessões diagnósticas/mês</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: O ALGORITMO ANDROMEDA DA META -->
+    <section id="andromeda" class="section-wrap">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">Creative-Led Segmentation &bull; Mentoria 4.8</div>
+          <h2 class="section-title">A Máquina de Aquisição: As 5 Teses Criativas</h2>
+        </div>
+        <span class="nav-badge-pill">Meta Ads Semântico</span>
+      </div>
+
+      <p class="section-subtitle">
+        Em vez de depender de segmentações de público ultrapassadas, o algoritmo <strong>Andromeda</strong> da Meta segmenta as mulheres maduras de Valinhos através da diversidade semântica dos anúncios em vídeo e imagem:
+      </p>
+
+      <div class="andromeda-grid">
+        <div class="andromeda-card">
+          <span class="andromeda-badge">Tese 01</span>
+          <div class="andromeda-title">O Pavor da Lesão Súbita</div>
+          <div class="andromeda-hook">
+            "Travei a coluna pegando a sacola de compras no porta-malas: por que mulheres após os 40 anos travam em exercícios comuns e como treinar sem impacto articular."
+          </div>
+          <div class="andromeda-target">Alvo Semântico: Mulheres com histórico de dor lombar e hérnia de disco.</div>
+        </div>
+
+        <div class="andromeda-card">
+          <span class="andromeda-badge">Tese 02</span>
+          <div class="andromeda-title">Não-Pertencimento à Academia</div>
+          <div class="andromeda-hook">
+            "Academia tradicional não foi feita para você: o ambiente privativo pensado exclusivamente para mulheres maduras que exigem discrição e respeito."
+          </div>
+          <div class="andromeda-target">Alvo Semântico: Mulheres que sentem vergonha ou aversão a redes como SmartFit.</div>
+        </div>
+
+        <div class="andromeda-card">
+          <span class="andromeda-badge">Tese 03</span>
+          <div class="andromeda-title">Climatério, Menopausa & Ossos</div>
+          <div class="andromeda-hook">
+            "Por que só caminhar não freia a osteoporose e a perda muscular na menopausa: o que a ciência diz sobre sobrecarga óssea segura."
+          </div>
+          <div class="andromeda-target">Alvo Semântico: Pacientes em terapia de reposição hormonal ou início de osteopenia.</div>
+        </div>
+
+        <div class="andromeda-card">
+          <span class="andromeda-badge">Tese 04</span>
+          <div class="andromeda-title">Prova Social de Condomínio</div>
+          <div class="andromeda-hook">
+            "Estudo de caso da aluna de 54 anos do Swiss Park que eliminou as dores no joelho e voltou a jogar beach tennis sem medo."
+          </div>
+          <div class="andromeda-target">Alvo Semântico: Moradoras de condomínios que praticam esportes com amigas.</div>
+        </div>
+
+        <div class="andromeda-card">
+          <span class="andromeda-badge">Tese 05</span>
+          <div class="andromeda-title">Autonomia aos 70 Anos</div>
+          <div class="andromeda-hook">
+            "Como você quer levantar da poltrona e brincar com os seus netos daqui a 20 anos? A força que você constrói hoje define sua independência amanhã."
+          </div>
+          <div class="andromeda-target">Alvo Semântico: Mulheres orientadas à longevidade ativa e saúde preventiva.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: BRANDING & MOCKUP APPAREL -->
+    <section class="section-wrap">
+      <div class="mockup-panel">
+        <div class="mockup-img-wrap">
+          <img src="mockup-apparel.png" alt="Kit Oficial Aluna Claudia Fernanda Personal Trainer">
+        </div>
+
+        <div class="mockup-content">
+          <span class="nav-badge-pill" style="width: fit-content;">Branding Executivo VIP</span>
+          <h3>A Experiência de Alto Padrão no Condomínio</h3>
+          <p>
+            A aluna dos condomínios nobres de Valinhos (Swiss Park, Sans Souci, Vale do Itamaracá, Paiquerê) não compra apenas uma hora de treino: ela compra <strong>status, exclusividade, acolhimento e segurança</strong>.
+          </p>
+          <p>
+            O kit oficial com camisa polo técnica e garrafa térmica personalizada com a assinatura da marca <em>"Seu movimento. Sua evolução."</em> materializa o cuidado e a excelência que justificam o ticket de <strong>R$ 9.600</strong> e distanciam a Cláudia de qualquer outro profissional da região.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: PLANO DE IMPLEMENTAÇÃO 90 DIAS -->
+    <section class="section-wrap">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">Cronograma de Ação &bull; Execução Rápida</div>
+          <h2 class="section-title">Roadmap de Implementação (90 Dias)</h2>
+        </div>
+        <span class="nav-badge-pill">Fases Operacionais</span>
+      </div>
+
+      <div class="timeline-grid">
+        <div class="timeline-card">
+          <div class="timeline-month">Mês 01 &bull; Fundação & Validação</div>
+          <h4>Estruturação & Primeiras Vendas</h4>
+          <ul>
+            <li><span>✓</span> Gravação dos 5 criativos do Algoritmo Andromeda.</li>
+            <li><span>✓</span> Lançamento da Página de Captura do Guia Anti-Travamento.</li>
+            <li><span>✓</span> Script de WhatsApp validado para resposta em menos de 5 min.</li>
+            <li><span>✓</span> Meta: 4 novas alunas fechadas no Plano Trimestral/Semestral.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-card">
+          <div class="timeline-month">Mês 02 &bull; Escala & Parcerias</div>
+          <h4>Onde se Congregam em Valinhos</h4>
+          <ul>
+            <li><span>✓</span> Ativação de parcerias com arenas de Beach Tennis de Valinhos.</li>
+            <li><span>✓</span> Visitas e apresentação do protocolo aos ginecologistas de TRH.</li>
+            <li><span>✓</span> Otimização de criativos campeões e escala de verba no Meta Ads.</li>
+            <li><span>✓</span> Meta: +5 alunas ativas no programa (totalizando 9 alunas).</li>
+          </ul>
+        </div>
+
+        <div class="timeline-card">
+          <div class="timeline-month">Mês 03 &bull; Consolidação & LTV</div>
+          <h4>Previsibilidade & Margem Máxima</h4>
+          <ul>
+            <li><span>✓</span> Implantação do Programa de Indicação VIP entre alunas.</li>
+            <li><span>✓</span> Renovações semestrais antecipadas com bonificação exclusiva.</li>
+            <li><span>✓</span> Atingimento da capacidade ótima (15 alunas ativas).</li>
+            <li><span>✓</span> Meta: R$ 24.000+/mês com estabilidade absoluta.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10: CTA FINAL DE APROVAÇÃO -->
+    <section class="final-cta-card">
+      <span class="nav-badge-pill" style="margin-bottom: 16px;">Parceria Estratégica &bull; Plataforma Multi Digital</span>
+      <h2>Pronta para Assumir o Topo do Mercado em Valinhos?</h2>
+      <p>
+        A metodologia está desenhada, os números são incontestáveis e o público de alta renda de Valinhos está procurando exatamente por esta solução agora. Dê o primeiro passo para consolidar sua marca e destravar sua receita previsível.
+      </p>
+
+      <a href="https://wa.me/5519998990373?text=Ol%C3%A1%20Carlos!%20Li%20a%20proposta%20executiva%20v3.0%20da%20Cl%C3%A1udia%20Fernanda%20e%20quero%20iniciar%20a%20implementa%C3%A7%C3%A3o." target="_blank" class="cta-btn-large">
+        <span>📲</span> Aprovar Proposta com Carlos Guedes via WhatsApp
+      </a>
+
+      <div style="margin-top: 24px; font-size: 13px; color: var(--text-muted); font-family: var(--font-mono);">
+        Assessoria de Crescimento Exclusiva &bull; Vagas Limitadas por Região
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-logo">
+        <img src="logo-dark.png" alt="Claudia Fernanda Personal Trainer">
+      </div>
+      <p style="color: var(--text-secondary); font-size: 13.5px;">
+        Seu movimento. <span style="color: var(--cyan-brand); font-style: italic; font-weight: 700;">Sua evolução.</span>
+      </p>
+      <p style="font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); margin-top: 4px;">
+        Projeto Executivo v3.0 &bull; Cláudia Fernanda Personal Trainer &bull; Plataforma Multi Digital &bull; 2026
+      </p>
+    </footer>
+
+  </div>
+
+  <!-- SCRIPT INTERATIVO DA CALCULADORA FINANCEIRA -->
+  <script>
+    const sliderAlunas = document.getElementById('sliderAlunas');
+    const sliderMix = document.getElementById('sliderMix');
+    
+    const displayAlunas = document.getElementById('displayAlunas');
+    const displayMix = document.getElementById('displayMix');
+    const displayHoras = document.getElementById('displayHoras');
+    
+    const resFaturamentoMensal = document.getElementById('resFaturamentoMensal');
+    const resFaturamentoAnual = document.getElementById('resFaturamentoAnual');
+    const resNovasAlunas = document.getElementById('resNovasAlunas');
+
+    function updateCalculator() {
+      const alunas = parseInt(sliderAlunas.value);
+      const mixSemestral = parseInt(sliderMix.value); // % semestral
+      const mixTrimestral = 100 - mixSemestral;
+
+      displayAlunas.textContent = `${alunas} alunas`;
+      displayMix.textContent = `${mixSemestral}% Semestral / ${mixTrimestral}% Trimestral`;
+
+      // Horas estimadas: cada aluna faz 2.5 aulas/semana. Horas totais na semana = alunas * 2.5. Dividido por 5 dias = horas/dia
+      const horasDia = ((alunas * 2.5) / 5).toFixed(1);
+      displayHoras.textContent = `${horasDia.replace('.', ',')} horas/dia`;
+
+      // Ticket mensal equivalente:
+      // Semestral: R$ 1.600/mês
+      // Trimestral: R$ 1.800/mês
+      const ticketPonderado = (mixSemestral / 100 * 1600) + (mixTrimestral / 100 * 1800);
+      const fatMensal = alunas * ticketPonderado;
+      const fatAnual = fatMensal * 12;
+
+      resFaturamentoMensal.textContent = fatMensal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+      resFaturamentoAnual.textContent = fatAnual.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+      // Novas alunas por mes necessárias considerando churn de 15% a 20% anual
+      if (alunas <= 10) {
+        resNovasAlunas.textContent = '1 aluna/mês';
+      } else if (alunas <= 18) {
+        resNovasAlunas.textContent = '1 a 2 alunas/mês';
+      } else {
+        resNovasAlunas.textContent = '2 a 3 alunas/mês';
+      }
+    }
+
+    sliderAlunas.addEventListener('input', updateCalculator);
+    sliderMix.addEventListener('input', updateCalculator);
+
+    // Initial run
+    updateCalculator();
+  </script>
+
+</body>
+</html>
